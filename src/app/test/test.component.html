@@ -1,0 +1,32 @@
+    <div class="img-overlay-wrap">
+      <img class="rounded-md" src="50StatesColor.png" alt="" />
+      <svg width="1150" height="765">
+        <svg
+          *ngFor="let answer of answers"
+          height="32"
+          width="32"
+          viewBox="0 0 24 24"
+          fill="none"
+          (click)="attempt(answer)"
+          [attr.x]="answer.x"
+          [attr.y]="answer.y"
+        >
+          <path
+            d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z"
+            fill="#E53E3E"
+            stroke="#9B2C2C"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M12 13a3 3 0 100-6 3 3 0 000 6z"
+            fill="#FFF5F5"
+            stroke="#FFF5F5"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </svg>
+    </div>
